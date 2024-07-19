@@ -20,6 +20,7 @@ $font-secondary: "Roboto", sans-serif;
 html {
   box-sizing: border-box;
   font-size: 62.5%; /* 10px / 16px = 0.625 = 62.5% */
+  scroll-behavior: smooth;
 }
 
 body {
