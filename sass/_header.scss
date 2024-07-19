@@ -1,0 +1,18 @@
+.header {
+  height: 100vh;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(0, 0, 255, 0.25),
+      rgba(0, 255, 255, 0.25)
+    ),
+    url(img/msii.jpg);
+
+  background-size: cover;
+  &__nav {
+    padding: 3rem;
+  }
+
+  &__logo {
+    height: 5rem;
+  }
+}

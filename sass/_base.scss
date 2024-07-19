@@ -1,0 +1,38 @@
+$color-primary: #5643fa;
+$color-primary-light: #2998ff;
+
+$color: #f5fafd;
+
+$color-grey-light-1: #f9f7f6;
+$color-grey-light-2: #aaa;
+
+$font-primary: "Comfortaa", sans-serif;
+$font-secondary: "Roboto", sans-serif;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 10px / 16px = 0.625 = 62.5% */
+}
+
+body {
+  font-family: $font-primary;
+  font-weight: 300;
+  color: $color-grey-light-1;
+  background-color: $color;
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 4rem;
+  color: $color-grey-light-2;
+  text-align: center;
+  margin-bottom: 2rem;
+}

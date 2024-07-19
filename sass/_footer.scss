@@ -1,0 +1,14 @@
+.footer {
+  display: flex;
+  padding: 3rem;
+  border-top: 1px solid $color-grey-light-2;
+  // margin-top: 50px;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.6rem;
+  color: $color-primary;
+
+  &__logo {
+    height: 3rem;
+  }
+}
