@@ -54,8 +54,18 @@ h2 {
 
 .social_links {
   width: 4rem;
-  height: 4rem;
-  color: #5643fa; }
+  color: #5643fa;
+  transition: all 0.3s;
+  height: 4rem; }
+
+.social_links:link,
+.social_links:visited {
+  color: #5643fa;
+  transition: all 0.3s; }
+
+.social_links:hover,
+.social_links:active {
+  color: #2998ff; }
 
 .playing-now {
   font-size: 1.6rem;
@@ -88,3 +98,7 @@ h2 {
   color: #5643fa; }
   .footer__logo {
     height: 3rem; }
+
+.dev:link,
+.dev:active {
+  text-decoration: none; }

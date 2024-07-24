@@ -12,3 +12,12 @@
     height: 3rem;
   }
 }
+
+// .dev {
+//   text-decoration: none;
+// }
+
+.dev:link,
+.dev:active {
+  text-decoration: none;
+}
