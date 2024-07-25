@@ -1,25 +1,33 @@
-.playing-now {
-  font-size: 1.6rem;
+.gamertag {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-
-  max-width: 75rem;
-
-  border-radius: 12px;
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 120rem;
+  margin: 0 auto;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
-  margin-bottom: 8.6rem;
   overflow: hidden;
   background-color: $color-primary;
-}
-
-.gamertag {
-  display: flex;
-  gap: 1.5rem;
-  flex-direction: column;
+  max-width: 75rem;
+  border-radius: 12px;
   align-items: center;
-}
+  margin-bottom: 3rem;
 
-.gamecard-img {
-  display: block;
+  @media only screen and (max-width: 800px) {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 42.5rem;
+    padding-top: 1.5rem;
+  }
+
+  &__ids {
+    font-size: 1.6rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  &__card {
+    display: block;
+  }
 }

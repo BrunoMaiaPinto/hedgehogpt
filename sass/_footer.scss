@@ -7,6 +7,11 @@
   font-size: 1.6rem;
   color: $color-primary;
 
+  @media only screen and (max-width: 1000px) {
+    flex-direction: column;
+    gap: 3rem;
+  }
+
   &__logo {
     height: 3rem;
   }
