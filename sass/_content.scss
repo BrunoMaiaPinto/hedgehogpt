@@ -1,0 +1,32 @@
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  color: $color-grey-light-2;
+  margin: 0 auto;
+
+  &__box {
+    display: flex;
+    gap: 0.8rem;
+  }
+
+  &__logo {
+    display: block;
+    height: 5.2rem;
+    filter: brightness(0);
+    opacity: 50%;
+
+    &-text {
+      height: 3.6rem;
+      margin-top: 1rem;
+    }
+  }
+}
+
+.section-2 {
+  margin: 0 auto;
+  max-width: 120rem;
+}

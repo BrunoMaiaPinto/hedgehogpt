@@ -17,6 +17,31 @@ body {
   color: #f9f7f6;
   background-color: #f5fafd; }
 
+.content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  align-items: center;
+  justify-items: center;
+  gap: 0.8rem;
+  color: #aaa;
+  margin: 0 auto; }
+  .content__box {
+    display: flex;
+    gap: 0.8rem; }
+  .content__logo {
+    display: block;
+    height: 5.2rem;
+    filter: brightness(0);
+    opacity: 50%; }
+    .content__logo-text {
+      height: 3.6rem;
+      margin-top: 1rem; }
+
+.section-2 {
+  margin: 0 auto;
+  max-width: 120rem; }
+
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.jpg);
