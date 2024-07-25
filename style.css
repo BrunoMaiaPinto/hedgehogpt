@@ -27,9 +27,14 @@ body {
     height: 5rem; }
 
 .hero {
+  display: flex;
   padding: 4rem;
   font-size: 2rem;
   line-height: 1.2; }
+
+.mario {
+  display: block;
+  width: 45%; }
 
 .featured {
   padding: 4.8rem 0 3.2rem 0;

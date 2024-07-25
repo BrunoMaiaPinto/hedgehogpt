@@ -1,5 +1,10 @@
 .hero {
+  display: flex;
   padding: 4rem;
   font-size: 2rem;
   line-height: 1.2;
+}
+.mario {
+  display: block;
+  width: 45%;
 }
