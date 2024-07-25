@@ -15,29 +15,3 @@
     opacity: 50%;
   }
 }
-
-.links {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-  // margin-bottom: 8rem;
-}
-
-.social_links {
-  width: 4rem;
-  color: $color-primary;
-  transition: all 0.3s;
-
-  height: 4rem;
-}
-
-.social_links:link,
-.social_links:visited {
-  color: $color-primary;
-  transition: all 0.3s;
-}
-
-.social_links:hover,
-.social_links:active {
-  color: $color-primary-light;
-}
