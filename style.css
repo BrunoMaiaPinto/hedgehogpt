@@ -17,14 +17,6 @@ body {
   color: #f9f7f6;
   background-color: #f5fafd; }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 4rem;
-  color: #aaa;
-  text-align: center;
-  margin-bottom: 3rem;
-  margin-top: 5rem; }
-
 .header {
   height: 100vh;
   background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.jpg);
@@ -33,6 +25,11 @@ h2 {
     padding: 3rem; }
   .header__logo {
     height: 5rem; }
+
+.hero {
+  padding: 4rem;
+  font-size: 2rem;
+  line-height: 1.2; }
 
 .featured {
   padding: 4.8rem 0 3.2rem 0;
@@ -47,26 +44,6 @@ h2 {
     filter: brightness(0);
     opacity: 50%; }
 
-.links {
-  display: flex;
-  gap: 2rem;
-  justify-content: center; }
-
-.social_links {
-  width: 4rem;
-  color: #5643fa;
-  transition: all 0.3s;
-  height: 4rem; }
-
-.social_links:link,
-.social_links:visited {
-  color: #5643fa;
-  transition: all 0.3s; }
-
-.social_links:hover,
-.social_links:active {
-  color: #2998ff; }
-
 .playing-now {
   font-size: 1.6rem;
   display: grid;
@@ -77,7 +54,7 @@ h2 {
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
   margin-bottom: 8.6rem;
   overflow: hidden;
-  background-color: #2998ff; }
+  background-color: #5643fa; }
 
 .gamertag {
   display: flex;
@@ -98,7 +75,31 @@ h2 {
   color: #5643fa; }
   .footer__logo {
     height: 3rem; }
+  .footer__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem; }
+  .footer__link {
+    width: 4rem;
+    height: 4rem;
+    color: #5643fa;
+    transition: all 0.3s;
+    text-decoration: none; }
+  .footer__link:link, .footer__link:visited {
+    color: #5643fa; }
+  .footer__link:hover, .footer__link:active {
+    color: #2998ff;
+    transform: scale(1.1); }
 
-.dev:link,
-.dev:active {
-  text-decoration: none; }
+h1 {
+  text-transform: uppercase;
+  font-size: 4.4rem;
+  color: #2998ff; }
+
+h2 {
+  text-transform: uppercase;
+  font-size: 3.5rem;
+  color: #aaa;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 5rem; }

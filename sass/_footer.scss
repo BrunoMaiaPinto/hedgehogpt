@@ -10,34 +10,29 @@
   &__logo {
     height: 3rem;
   }
-}
 
-.footer__links {
-  display: flex;
-  gap: 2rem;
-  justify-content: center;
-}
+  &__links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
 
-.footer__link {
-  width: 4rem;
-  color: $color-primary;
-  transition: all 0.3s;
+  &__link {
+    width: 4rem;
+    height: 4rem;
+    color: $color-primary;
+    transition: all 0.3s;
+    text-decoration: none;
+  }
 
-  height: 4rem;
-}
+  &__link:link,
+  &__link:visited {
+    color: $color-primary;
+  }
 
-.footer__link:link,
-.footer__link:visited {
-  color: $color-primary;
-  transition: all 0.3s;
-}
-
-.footer__link:hover,
-.footer__link:active {
-  color: $color-primary-light;
-}
-
-.dev:link,
-.dev:active {
-  text-decoration: none;
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-light;
+    transform: scale(1.1);
+  }
 }
