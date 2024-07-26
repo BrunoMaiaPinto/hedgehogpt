@@ -66,10 +66,12 @@ body {
   margin: 0 auto;
   max-width: 120rem; }
   .featured__logos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 10rem; }
   .featured__logo {
+    display: block;
     height: 5.2rem;
     filter: brightness(0);
     opacity: 50%; }
@@ -94,13 +96,14 @@ body {
       max-width: 42.5rem;
       padding-top: 1.5rem; } }
   .gamertag__ids {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem; }
   .gamertag__card {
-    display: block; }
+    display: block;
+    max-width: 100%; }
 
 .footer {
   display: flex;

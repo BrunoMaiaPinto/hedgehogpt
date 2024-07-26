@@ -4,12 +4,14 @@
   max-width: 120rem;
 
   &__logos {
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
     justify-content: center;
     gap: 10rem;
   }
 
   &__logo {
+    display: block;
     height: 5.2rem;
     filter: brightness(0);
     opacity: 50%;

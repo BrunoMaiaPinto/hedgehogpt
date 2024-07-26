@@ -20,7 +20,7 @@
   }
 
   &__ids {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -29,5 +29,6 @@
 
   &__card {
     display: block;
+    max-width: 100%;
   }
 }
