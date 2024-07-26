@@ -7,7 +7,9 @@
   gap: 0.8rem;
   color: $color-grey-light-2;
   margin: 0 auto;
-
+  color: $color-primary;
+  font-size: 1.6rem;
+  line-height: 1.6;
   &__box {
     display: flex;
     gap: 0.8rem;
@@ -23,6 +25,10 @@
       height: 3.6rem;
       margin-top: 1rem;
     }
+  }
+
+  &__link {
+    display: inline-block;
   }
 }
 

@@ -25,7 +25,10 @@ body {
   justify-items: center;
   gap: 0.8rem;
   color: #aaa;
-  margin: 0 auto; }
+  margin: 0 auto;
+  color: #5643fa;
+  font-size: 1.6rem;
+  line-height: 1.6; }
   .content__box {
     display: flex;
     gap: 0.8rem; }
@@ -37,6 +40,8 @@ body {
     .content__logo-text {
       height: 3.6rem;
       margin-top: 1rem; }
+  .content__link {
+    display: inline-block; }
 
 .section-2 {
   margin: 0 auto;
@@ -102,8 +107,7 @@ body {
     align-items: center;
     gap: 1.5rem; }
   .gamertag__card {
-    display: block;
-    max-width: 100%; }
+    display: block; }
 
 .footer {
   display: flex;
