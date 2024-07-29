@@ -10,9 +10,40 @@
   background-size: cover;
   &__nav {
     padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   &__logo {
     height: 5rem;
+  }
+
+  &__nav__btn {
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    font-size: 2rem;
+  }
+
+  &__link {
+    display: block;
+    text-decoration: none;
+    color: $color-primary-light;
+    padding: 1rem;
+    border-radius: 50px;
+    transition: all 0.3s;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-primary-light;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-light;
+    transform: scale(1.1);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
   }
 }

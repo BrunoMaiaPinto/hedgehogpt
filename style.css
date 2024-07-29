@@ -52,15 +52,37 @@ body {
   background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.jpg);
   background-size: cover; }
   .header__nav {
-    padding: 3rem; }
+    padding: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
   .header__logo {
     height: 5rem; }
+  .header__nav__btn {
+    display: flex;
+    gap: 1.6rem;
+    list-style: none;
+    font-size: 2rem; }
+  .header__link {
+    display: block;
+    text-decoration: none;
+    color: #2998ff;
+    padding: 1rem;
+    border-radius: 50px;
+    transition: all 0.3s; }
+  .header__link:link, .header__link:visited {
+    color: #2998ff; }
+  .header__link:hover, .header__link:active {
+    color: #2998ff;
+    transform: scale(1.1);
+    box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2); }
 
 .hero {
   display: flex;
   padding: 4rem;
   font-size: 2rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  justify-content: center; }
 
 .mario {
   display: block;
