@@ -4,7 +4,7 @@
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  gap: 0.8rem;
+  gap: 1.5rem;
   color: $color-grey-light-2;
   margin: 0 auto;
   color: $color-primary;
@@ -29,6 +29,21 @@
 
   &__link {
     display: inline-block;
+    transition: all 0.3s;
+  }
+
+  &__link:link,
+  &__link:visited {
+    color: $color-primary;
+  }
+
+  &__link:hover,
+  &__link:active {
+    color: $color-primary-light;
+  }
+
+  &__text {
+    justify-self: flex-start;
   }
 }
 

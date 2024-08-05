@@ -23,7 +23,7 @@ body {
   grid-template-rows: repeat(3, 1fr);
   align-items: center;
   justify-items: center;
-  gap: 0.8rem;
+  gap: 1.5rem;
   color: #aaa;
   margin: 0 auto;
   color: #5643fa;
@@ -41,7 +41,14 @@ body {
       height: 3.6rem;
       margin-top: 1rem; }
   .content__link {
-    display: inline-block; }
+    display: inline-block;
+    transition: all 0.3s; }
+  .content__link:link, .content__link:visited {
+    color: #5643fa; }
+  .content__link:hover, .content__link:active {
+    color: #2998ff; }
+  .content__text {
+    justify-self: flex-start; }
 
 .section-2 {
   margin: 0 auto;
