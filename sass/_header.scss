@@ -25,6 +25,10 @@
     gap: 1.6rem;
     list-style: none;
     font-size: 2rem;
+
+    @media only screen and (max-width: 900px) {
+      display: none;
+    }
   }
 
   &__link {
