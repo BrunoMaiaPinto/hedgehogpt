@@ -10,6 +10,9 @@ html {
   font-size: 62.5%;
   /* 10px / 16px = 0.625 = 62.5% */
   scroll-behavior: smooth; }
+  @media only screen and (max-width: 600px) {
+    html {
+      font-size: 50%; } }
 
 body {
   font-family: "Comfortaa", sans-serif;
@@ -62,7 +65,7 @@ body {
     padding: 2rem; }
   .gallery__pictures {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
     overflow: hidden; }
   .gallery__img {
@@ -171,7 +174,8 @@ body {
     align-items: center;
     gap: 1.5rem; }
   .gamertag__card {
-    display: block; }
+    display: block;
+    max-width: 42.5rem; }
 
 .footer {
   display: flex;
