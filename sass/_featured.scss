@@ -1,13 +1,25 @@
 .featured {
-  padding: 4.8rem 0 3.2rem 0;
-  margin: 0 auto;
-  max-width: 120rem;
-
-  &__logos {
+  &__container {
+    padding: 4.8rem 0 3.2rem 0;
+    margin: 0 auto;
+    max-width: 120rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
+    justify-items: center;
     gap: 10rem;
+
+    @media only screen and (max-width: 1120px) {
+      gap: 5rem;
+    }
+
+    @media only screen and (max-width: 950px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+  }
+
+  &__logos {
+    // min-width: 120rem;
   }
 
   &__logo {
