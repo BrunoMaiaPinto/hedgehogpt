@@ -5,15 +5,25 @@
       rgba(0, 0, 255, 0.25),
       rgba(0, 255, 255, 0.25)
     ),
-    url(img/msii.jpg);
+    url(img/msii.webp);
 
   background-size: cover;
   margin: 0 auto;
+
+  @media only screen and (max-width: 900px) {
+    height: 70vh;
+  }
+
   &__nav {
     padding: 3rem;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     align-items: center;
+
+    @media only screen and (max-width: 900px) {
+      justify-content: center;
+    }
   }
 
   &__logo {

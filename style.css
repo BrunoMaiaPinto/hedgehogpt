@@ -85,14 +85,21 @@ body {
 
 .header {
   height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.webp);
   background-size: cover;
   margin: 0 auto; }
+  @media only screen and (max-width: 900px) {
+    .header {
+      height: 70vh; } }
   .header__nav {
     padding: 3rem;
     display: flex;
     justify-content: space-between;
+    margin: 0 auto;
     align-items: center; }
+    @media only screen and (max-width: 900px) {
+      .header__nav {
+        justify-content: center; } }
   .header__logo {
     height: 5rem; }
   .header__nav__btn {
@@ -118,23 +125,25 @@ body {
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2); }
 
 .hero {
-  margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 4rem;
   font-size: 2rem;
-  line-height: 1.2;
-  justify-self: center;
-  padding: 4.8rem 0 3.2rem 0;
-  margin: 0 auto;
-  max-width: 120rem; }
-  .hero__content {
-    margin: 0 auto;
-    margin-left: 50px; }
+  line-height: 1.2; }
+  .hero__box {
+    padding: 0 0 0 4.8rem;
+    justify-self: center;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 55fr 45fr;
+    justify-content: center;
+    align-items: center;
+    max-width: 120rem; }
+    @media only screen and (max-width: 950px) {
+      .hero__box {
+        grid-template-columns: 1fr;
+        justify-items: center;
+        gap: 2rem; } }
 
 .sonic_logo {
-  width: 60%;
-  justify-self: center; }
+  width: 60%; }
 
 .featured__container {
   padding: 4.8rem 0 3.2rem 0;
