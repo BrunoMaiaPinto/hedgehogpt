@@ -1,19 +1,5 @@
 .header {
-  height: 100vh;
-  background-image: linear-gradient(
-      to right bottom,
-      rgba(0, 0, 255, 0.25),
-      rgba(0, 255, 255, 0.25)
-    ),
-    url(img/msii.webp);
-
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto;
-
-  @media only screen and (max-width: 900px) {
-    height: 70vh;
-  }
+  background-color: $color-primary;
 
   &__nav {
     padding: 3rem;
@@ -29,6 +15,11 @@
 
   &__logo {
     height: 5rem;
+    transition: all 0.3s;
+  }
+
+  &__logo:hover {
+    transform: scale(1.1);
   }
 
   &__nav__btn {
@@ -45,7 +36,7 @@
   &__link {
     display: block;
     text-decoration: none;
-    color: $color-primary-light;
+    color: $color-grey-light-1;
     padding: 1rem;
     border-radius: 50px;
     transition: all 0.3s;
@@ -53,12 +44,12 @@
 
   &__link:link,
   &__link:visited {
-    color: $color-primary-light;
+    color: $color-grey-light-1;
   }
 
   &__link:hover,
   &__link:active {
-    color: $color-primary-light;
+    color: $color-grey-light-1;
     transform: scale(1.1);
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2);
   }

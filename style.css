@@ -18,7 +18,7 @@ body {
   font-family: "Comfortaa", sans-serif;
   font-weight: 300;
   color: #f9f7f6;
-  background-color: #f5fafd; }
+  background-color: #111827; }
 
 .content {
   display: grid;
@@ -29,7 +29,8 @@ body {
   gap: 1.5rem;
   color: #aaa;
   margin: 0 auto;
-  color: #5643fa;
+  background-color: #111827;
+  color: #111827;
   font-size: 1.6rem;
   line-height: 1.6; }
   .content__box {
@@ -47,9 +48,9 @@ body {
     display: inline-block;
     transition: all 0.3s; }
   .content__link:link, .content__link:visited {
-    color: #5643fa; }
+    color: #111827; }
   .content__link:hover, .content__link:active {
-    color: #2998ff; }
+    color: #1f2937; }
   .content__text {
     justify-self: flex-start; }
 
@@ -66,7 +67,7 @@ body {
   .gallery__pictures {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
+    gap: 5rem;
     overflow: hidden;
     justify-items: center; }
     @media only screen and (max-width: 800px) {
@@ -74,21 +75,14 @@ body {
         grid-template-columns: repeat(2, 1fr); } }
   .gallery__img {
     display: block;
-    width: 90%;
-    height: 90%;
+    width: 300px;
+    height: 300px;
     border-radius: 1rem;
     object-fit: cover;
     transition: all 0.3s; }
 
 .header {
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 255, 0.25), rgba(0, 255, 255, 0.25)), url(img/msii.webp);
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto; }
-  @media only screen and (max-width: 900px) {
-    .header {
-      height: 70vh; } }
+  background-color: #111827; }
   .header__nav {
     padding: 3rem;
     display: flex;
@@ -99,7 +93,10 @@ body {
       .header__nav {
         justify-content: center; } }
   .header__logo {
-    height: 5rem; }
+    height: 5rem;
+    transition: all 0.3s; }
+  .header__logo:hover {
+    transform: scale(1.1); }
   .header__nav__btn {
     display: flex;
     gap: 1.6rem;
@@ -111,29 +108,23 @@ body {
   .header__link {
     display: block;
     text-decoration: none;
-    color: #2998ff;
+    color: #f9f7f6;
     padding: 1rem;
     border-radius: 50px;
     transition: all 0.3s; }
   .header__link:link, .header__link:visited {
-    color: #2998ff; }
+    color: #f9f7f6; }
   .header__link:hover, .header__link:active {
-    color: #2998ff;
+    color: #f9f7f6;
     transform: scale(1.1);
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2); }
 
 .hero {
   font-size: 2rem;
-  line-height: 1.2; }
+  line-height: 1.2;
+  background-color: #111827; }
   .hero__box {
-    padding: 0 0 0 4.8rem;
-    justify-self: center;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    justify-content: center;
-    align-items: center;
-    max-width: 120rem; }
+    text-align: center; }
     @media only screen and (max-width: 950px) {
       .hero__box {
         grid-template-columns: 1fr;
@@ -141,29 +132,36 @@ body {
         gap: 2rem; } }
 
 .sonic_logo {
-  width: 60%; }
-
-.featured__container {
-  padding: 4.8rem 0 3.2rem 0;
-  margin: 0 auto;
-  max-width: 120rem;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  justify-items: center;
-  gap: 10rem; }
-  @media only screen and (max-width: 1120px) {
-    .featured__container {
-      gap: 5rem; } }
-  @media only screen and (max-width: 950px) {
-    .featured__container {
-      grid-template-columns: repeat(2, 1fr);
-      gap: 2rem; } }
-
-.featured__logo {
   display: block;
-  height: 5.2rem;
-  filter: brightness(0);
-  opacity: 50%; }
+  width: 200px;
+  justify-self: center;
+  margin-bottom: 1.5rem; }
+
+.featured {
+  background-color: #1f2937; }
+  .featured__container {
+    padding: 3.2rem 0 3.2rem 0;
+    margin: 0 auto;
+    max-width: 120rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    gap: 10rem; }
+    @media only screen and (max-width: 1120px) {
+      .featured__container {
+        gap: 5rem; } }
+    @media only screen and (max-width: 950px) {
+      .featured__container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem; } }
+  .featured__logo {
+    display: block;
+    height: 5.2rem;
+    filter: drop-shadow(3px 3px white) drop-shadow(-3px -3px white);
+    opacity: 80%; }
+
+.gamertags {
+  background-color: #1f2937; }
 
 .gamertag {
   display: grid;
@@ -172,7 +170,7 @@ body {
   margin: 0 auto;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
   overflow: hidden;
-  background-color: #5643fa;
+  background-color: #374151;
   max-width: 75rem;
   border-radius: 12px;
   align-items: center;
@@ -201,7 +199,7 @@ body {
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
-  color: #5643fa; }
+  color: #f9f7f6; }
   @media only screen and (max-width: 1000px) {
     .footer {
       flex-direction: column;
@@ -215,19 +213,19 @@ body {
   .footer__link {
     width: 4rem;
     height: 4rem;
-    color: #5643fa;
+    color: #f9f7f6;
     transition: all 0.3s;
     text-decoration: none; }
   .footer__link:link, .footer__link:visited {
-    color: #5643fa; }
+    color: #f9f7f6; }
   .footer__link:hover, .footer__link:active {
-    color: #2998ff;
+    color: #aaa;
     transform: scale(1.1); }
 
 h1 {
-  text-transform: uppercase;
   font-size: 4.4rem;
-  color: #2998ff; }
+  color: #f9f7f6;
+  margin-bottom: 1rem; }
 
 h2 {
   text-transform: uppercase;

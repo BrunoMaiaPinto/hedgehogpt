@@ -1,6 +1,7 @@
 .featured {
+  background-color: $color-primary-light;
   &__container {
-    padding: 4.8rem 0 3.2rem 0;
+    padding: 3.2rem 0 3.2rem 0;
     margin: 0 auto;
     max-width: 120rem;
     display: grid;
@@ -25,7 +26,7 @@
   &__logo {
     display: block;
     height: 5.2rem;
-    filter: brightness(0);
-    opacity: 50%;
+    filter: drop-shadow(3px 3px white) drop-shadow(-3px -3px white);
+    opacity: 80%;
   }
 }

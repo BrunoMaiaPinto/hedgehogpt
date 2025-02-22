@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
   font-size: 1.6rem;
-  color: $color-primary;
+  color: $color-grey-light-1;
 
   @media only screen and (max-width: 1000px) {
     flex-direction: column;
@@ -25,19 +25,20 @@
   &__link {
     width: 4rem;
     height: 4rem;
-    color: $color-primary;
+    color: $color-grey-light-1;
+
     transition: all 0.3s;
     text-decoration: none;
   }
 
   &__link:link,
   &__link:visited {
-    color: $color-primary;
+    color: $color-grey-light-1;
   }
 
   &__link:hover,
   &__link:active {
-    color: $color-primary-light;
+    color: $color-grey-light-2;
     transform: scale(1.1);
   }
 }

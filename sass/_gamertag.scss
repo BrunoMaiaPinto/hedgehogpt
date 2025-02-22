@@ -1,3 +1,7 @@
+.gamertags {
+  background-color: $color-primary-light;
+}
+
 .gamertag {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -5,7 +9,7 @@
   margin: 0 auto;
   box-shadow: 0 24px 48px rgba(0, 0, 0, 0.075);
   overflow: hidden;
-  background-color: $color-primary;
+  background-color: $color-secondary;
   max-width: 75rem;
   border-radius: 12px;
   align-items: center;

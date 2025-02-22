@@ -1,5 +1,6 @@
-$color-primary: #5643fa;
-$color-primary-light: #2998ff;
+$color-primary: #111827;
+$color-primary-light: #1f2937;
+$color-secondary: #374151;
 
 $color: #f5fafd;
 
@@ -35,5 +36,5 @@ body {
   font-family: $font-primary;
   font-weight: 300;
   color: $color-grey-light-1;
-  background-color: $color;
+  background-color: $color-primary;
 }

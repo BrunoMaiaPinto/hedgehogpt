@@ -2,19 +2,23 @@
   // padding: 4rem;
   font-size: 2rem;
   line-height: 1.2;
+  background-color: $color-primary;
+  // height: 55vh;
 
   // max-width: 120rem;
 
   &__box {
     // padding: 4.8rem 0 3.2rem 0;
-    padding: 0 0 0 4.8rem;
-    justify-self: center;
-    margin: auto;
-    display: grid;
-    grid-template-columns: 55fr 45fr;
-    justify-content: center;
-    align-items: center;
-    max-width: 120rem;
+    // display: flex;
+    text-align: center;
+    // padding: 0 0 0 4.8rem;
+    // justify-self: center;
+    // margin: 0 auto;
+    // display: grid;
+    // grid-template-columns: 55fr 45fr;
+    // justify-content: center;
+    // align-items: center;
+    // max-width: 120rem;
 
     @media only screen and (max-width: 950px) {
       grid-template-columns: 1fr;
@@ -25,7 +29,8 @@
 }
 
 .sonic_logo {
-  //display: block;
-  width: 60%;
-  // justify-self: center;
+  display: block;
+  width: 200px;
+  justify-self: center;
+  margin-bottom: 1.5rem;
 }
