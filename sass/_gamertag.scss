@@ -1,5 +1,5 @@
 .gamertags {
-  background-color: $color-primary-light;
+  background-color: $color-primary;
 }
 
 .gamertag {
@@ -24,11 +24,14 @@
   }
 
   &__ids {
-    font-size: 1.8rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 1.5rem;
+
+    &__text {
+      font-size: 12px;
+    }
   }
 
   &__card {
