@@ -1,13 +1,15 @@
 .featured {
+  padding: 2rem;
   background-color: $color-primary-light;
+
   &__container {
     padding: 3.2rem 0 3.2rem 0;
     margin: 0 auto;
-    max-width: 120rem;
+    // max-width: 120rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
-    gap: 10rem;
+    // gap: 10rem;
 
     @media only screen and (max-width: 1120px) {
       gap: 5rem;
@@ -19,14 +21,10 @@
     }
   }
 
-  &__logos {
-    // min-width: 120rem;
-  }
-
   &__logo {
     display: block;
     height: 5.2rem;
-    filter: drop-shadow(3px 3px white) drop-shadow(-3px -3px white);
+    // filter: drop-shadow(3px 3px white) drop-shadow(-3px -3px white);
     opacity: 80%;
   }
 }

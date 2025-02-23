@@ -80,11 +80,13 @@ body {
     border-radius: 1rem;
     object-fit: cover;
     transition: all 0.3s; }
+    .gallery__img:hover {
+      transform: scale(1.1); }
 
 .header {
   background-color: #111827; }
   .header__nav {
-    padding: 3rem;
+    padding: 2rem;
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
@@ -120,13 +122,17 @@ body {
     box-shadow: 0 24px 48px rgba(0, 0, 0, 0.2); }
 
 .hero {
+  padding: 3.5rem;
   font-size: 2rem;
   line-height: 1.2;
-  background-color: #111827; }
+  background-color: #111827;
+  margin-bottom: 5rem; }
   .hero__box {
-    text-align: center; }
+    text-align: center;
+    font-size: x-large; }
     @media only screen and (max-width: 950px) {
       .hero__box {
+        margin-top: 0;
         grid-template-columns: 1fr;
         justify-items: center;
         gap: 2rem; } }
@@ -137,16 +143,18 @@ body {
   justify-self: center;
   margin-bottom: 1.5rem; }
 
+p {
+  font-size: 3.5rem; }
+
 .featured {
+  padding: 2rem;
   background-color: #1f2937; }
   .featured__container {
     padding: 3.2rem 0 3.2rem 0;
     margin: 0 auto;
-    max-width: 120rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    justify-items: center;
-    gap: 10rem; }
+    justify-items: center; }
     @media only screen and (max-width: 1120px) {
       .featured__container {
         gap: 5rem; } }
@@ -157,7 +165,6 @@ body {
   .featured__logo {
     display: block;
     height: 5.2rem;
-    filter: drop-shadow(3px 3px white) drop-shadow(-3px -3px white);
     opacity: 80%; }
 
 .gamertags {
@@ -223,7 +230,8 @@ body {
     transform: scale(1.1); }
 
 h1 {
-  font-size: 4.4rem;
+  text-align: center;
+  font-size: 5.5rem;
   color: #f9f7f6;
   margin-bottom: 1rem; }
 
