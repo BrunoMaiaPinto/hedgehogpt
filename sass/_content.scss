@@ -3,9 +3,8 @@
 // }
 
 .content {
-  display: flex;
-  // grid-template-columns: repeat(2, 1fr);
-  // grid-template-rows: repeat(3, 1fr);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   align-items: center;
   justify-content: space-between;
   gap: 1.5rem;
@@ -15,9 +14,11 @@
   font-size: 12px;
   line-height: 1.6;
 
-  @media only screen and (max-width: 950px) {
+  @media only screen and (max-width: 1100px) {
+    display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
+    text-align: center;
   }
 
   &__box {
@@ -28,9 +29,9 @@
     border-radius: 10px;
     border: black;
 
-    @media only screen and (max-width: 950px) {
-      height: 110px;
-    }
+    // @media only screen and (max-width: 950px) {
+    //   height: 110px;
+    // }
   }
 
   &__logo_box {
@@ -39,6 +40,10 @@
     align-items: center;
     justify-content: left;
     margin-bottom: 1rem;
+
+    @media only screen and (max-width: 1100px) {
+      justify-content: center;
+    }
   }
 
   &__logo {
