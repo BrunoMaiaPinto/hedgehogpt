@@ -419,6 +419,18 @@ p {
   padding: 5rem;
 }
 
+@media only screen and (max-width: 1000px) {
+  .content-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .content-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .content-card {
   background-color: var(--color-background-alt);
   border-radius: var(--radius-lg);
