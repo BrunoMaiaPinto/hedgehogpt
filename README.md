@@ -1,7 +1,6 @@
 # 🎮 HedgehogPT — Gaming Link Hub
 
 > _"Video games are more than just a hobby to me."_  
-> They're a passion, a lifestyle, and a way to connect with fellow gamers, collectors, and fans.
 
 **HedgehogPT** is a personal **link aggregator** site built to centralize all my gaming-related platforms in one clean, responsive, and visually engaging space.
 
